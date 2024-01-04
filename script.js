@@ -28,3 +28,25 @@ function out(){
     })
 }
 out();
+
+// function headerScroll(){
+    const header = document.querySelector("header");
+    let prevY = 0
+  
+    document.addEventListener("scroll", ()=>{
+       let scrollTop = window.scrollY || document.documentElement.scrollTop;
+       if(scrollTop > prevY){
+        header.style.top = "-100px";
+
+       } else{
+        header.style.top ="0"
+        header.classList.add("active")
+       }
+       prevY = scrollTop;
+
+    })
+    
+   
+// }
+// headerScroll();
+

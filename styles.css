@@ -1,6 +1,6 @@
 :root {
-  --green:#0c3728;
-  /* --green:#1d5c46; */
+  /* --green:#0c3728; */
+  --green:#1d5c46;
   --green2:#56776c;
  
   --red:#fe0003;
@@ -50,13 +50,22 @@ body{
     background-color: var(--green);
     
 }
+
+header.active{
+    max-width: 100%;
+    padding: 0 20px;
+}
 header{
+    position: fixed;
+    top: 0;
     width: 100%;
     max-width: 90%;
+    padding-top: 5px !important;
     top: 0;
-    margin: 0 auto;
     left: 0;
     right: 0;
+    margin: 0 auto;
+    background-color: var(--green);
     display: flex;
     justify-content: space-between;
     align-items: center;
