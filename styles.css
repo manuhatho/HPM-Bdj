@@ -688,6 +688,10 @@ footer fieldset{
     text-align: center;
 }
 
+footer #copyright{
+    font-size: 13px;
+}
+
 /* ---------------------------RESPONSIVE ACCUEIL----------------------------------------------- */
 
 /* 2xl */
