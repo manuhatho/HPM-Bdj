@@ -839,6 +839,7 @@ footer fieldset{
         text-align: center;
         font-size: 17px;
         margin: 0 auto;
+        text-transform: capitalize;
         
         
     }
