@@ -222,12 +222,12 @@ header .menu.active .bar{
 
 .hero-left button{
     font-family:'rubik' ;
-    padding: 13px 25px;
+    padding: 12px 20px;
     border: none;
     cursor: pointer;
     transition: 0.2s ease;
     background-color: #fff;
-    font-size: 19px;
+    /* font-size: 16px; */
     
 }
 .hero-left button:hover{
@@ -923,7 +923,11 @@ footer fieldset{
     }
 }
 
-@media (max-width:640px) {}
+@media (max-width:640px) {
+    body{
+        font-size: 14px;
+    }
+}
 
 @media (max-width:520px){
     .section-3{
