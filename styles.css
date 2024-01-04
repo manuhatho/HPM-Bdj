@@ -517,7 +517,10 @@ main{
     height: 400px;
     color: #fff;
     background-color: var(--green2);
-    padding:0 60px;
+    padding:  0 60px;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    
 }
 
 .section-4 .sect4-left h1, .sect4-left p {
@@ -720,6 +723,14 @@ footer fieldset{
 
 
 /* xl */
+@media (max-width:1312px) {
+    .section-4{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
 @media (max-width:1280px) {}
 
 
@@ -880,19 +891,14 @@ footer fieldset{
         margin-top: 0;
     }
 }
-@media (max-width:893px) {
+@media (max-width:958px) {
     .section-3{
         display: flex;
         flex-direction: column-reverse;
         justify-content: center;
         align-items: center;
     }
-    .section-4{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-    }
+  
 }
 @media (max-width:870px) {
     
@@ -907,15 +913,16 @@ footer fieldset{
 @media (max-width:768px) {}
 
 /* sm */
-@media (max-width:656px) {
+@media (max-width:696px) {
     .section-4 .sect4-left{
-        height: auto;
+        height: auto ;
        padding-top: 20px;
        padding-bottom: 20px;
        
 
     }
 }
+
 @media (max-width:640px) {}
 
 @media (max-width:520px){
@@ -928,7 +935,8 @@ footer fieldset{
     .section-3 .sect3-right img{
         height: auto;
     }
-    .section-4 .sect4-right {
+   
+    .section-4 .sect4-right{
         height: auto;
     }
     .section-4 .sect4-right img{
