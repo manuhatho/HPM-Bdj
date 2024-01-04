@@ -51,6 +51,14 @@ body{
     
 }
 
+#header.hide{
+   background-color: transparent !important;
+
+}
+.logo.hide{
+   
+opacity: 0;
+}
 header.active{
     max-width: 100%;
     padding: 0 20px;
@@ -69,6 +77,7 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    z-index: 99;
     
 }
 
