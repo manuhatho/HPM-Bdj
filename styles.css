@@ -62,6 +62,7 @@ opacity: 0;
 header.active{
     max-width: 100%;
     padding: 0 20px;
+    background-color: var(--green) !important;
 }
 header{
     position: fixed;

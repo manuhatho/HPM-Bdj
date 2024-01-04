@@ -12,7 +12,7 @@ function menuBar(){
         menu.classList.toggle("active");
         nav.classList.toggle("active");
         navBlend.classList.toggle("active");
-        header.classList.add("hide");
+        header.classList.toggle("hide");
         logo.classList.toggle("hide");
     })
    
@@ -32,8 +32,9 @@ function out(){
         menu.classList.toggle("active");
         nav.classList.toggle("active");
         navBlend.classList.toggle("active");
-        header.classList.add("hide");
+        header.classList.toggle("hide");
         logo.classList.toggle("hide");
+       
     })
 }
 out();
