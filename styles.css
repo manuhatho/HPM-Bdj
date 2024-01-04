@@ -51,18 +51,30 @@ body{
     
 }
 
-#header.hide{
-   background-color: transparent !important;
+.header.hide{
+background-color: transparent!important;
 
+}
+header.hide {
+background-color: transparent !important;
 }
 .logo.hide{
    
 opacity: 0;
 }
-header.active{
-    max-width: 100%;
-    padding: 0 20px;
+
+.header.active{
+    background-color: var(--green);
+
+}
+.header{
+   width: 100% ;
     background-color: var(--green) !important;
+    height: 90px;
+    position: fixed;
+    top: 0;
+    z-index: 99;
+    
 }
 header{
     position: fixed;
