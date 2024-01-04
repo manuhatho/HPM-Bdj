@@ -1,5 +1,6 @@
 :root {
   --green:#0c3728;
+  /* --green:#1d5c46; */
   --green2:#56776c;
  
   --red:#fe0003;
@@ -7,10 +8,7 @@
   --blue:#0e2293;
 }
 
-@font-face {
-    font-family: 'modern';
-    src: url(./Assets/Fonts/MODERNA_.TTF);
-}
+
 @font-face {
     font-family: 'rubik';
     src: url(./Assets/Fonts/Rubik-VariableFont_wght.ttf);
@@ -191,7 +189,7 @@ header .menu.active .bar{
 }
 .hero-left h1{
     color: var(--yellow);
-    font-family: 'modern';
+    font-family: 'rubik';
     width: 100%;
     max-width: 800px;
 }
@@ -839,6 +837,7 @@ footer fieldset{
         max-width: 50%;
         border-bottom: 1px solid var(--red);
         text-align: center;
+        font-size: 17px;
         margin: 0 auto;
         
         
