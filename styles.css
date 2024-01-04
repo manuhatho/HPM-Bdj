@@ -1,8 +1,7 @@
 :root {
   --green:#0c3728;
-  --green2:#0c3728b9;
-  /* --green:#1b805d; */
-  /* --green2:#14a79d; */
+  --green2:#56776c;
+ 
   --red:#fe0003;
   --yellow:#fef917;
   --blue:#0e2293;
@@ -541,7 +540,8 @@ main{
 
 footer{
     width: 100%;
-    background-color: black;
+    /* background-color: black; */
+    background-color: var(--green);
     color: white;
     font-family: 'rubik';
     padding-top: 10px;
