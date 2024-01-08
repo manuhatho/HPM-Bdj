@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./rendez-vous.css">
     <title>Hopital Protestant de Mbouo-Bandjoun --Prenez rendez-vous</title>
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/pikaday/css/pikaday.min.css">
 </head>
 <body>
     <!-- <div class="preventOverflow-X"> -->
@@ -69,12 +70,12 @@
                         <input id="address" name="Address" type="tel" placeholder="Entrer votre addresse de résidence">
                     </div>
                     <div>
-                        <label for="date">
+                        <label for="datePicker">
                             <i class="fa-regular fa-calendar"></i>
                         </label>
                       
-                        <label for="dateInput">Sélectionnez une date :</label>
-                        <input type="text" id="dateInput" placeholder="JJ/MM/AAAA">
+                        <label for="datePicker">Sélectionnez une date :</label>
+                        <input type="text" id="datePicker" placeholder="JJ/MM/AAAA">
                       
                       
                     </div>
@@ -173,15 +174,11 @@
 
 
 
-<script>
-    // Appliquer les contraintes de format de date
-    document.getElementById('dateInput').addEventListener('input', function () {
-      let inputValue = this.value;
-      if (inputValue.length === 2 || inputValue.length === 5) {
-        inputValue += '/';
-        this.value = inputValue;
-      }
-    });
+
+  <script src="https://cdn.jsdelivr.net/npm/pikaday/pikaday.min.js"></script>
+  <script>
+     var picker = new Pikaday({ field: document.getElementById('datePicker') });
+
   </script>
 
     <script src="./script.js"></script>
