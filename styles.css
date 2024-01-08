@@ -200,11 +200,10 @@ header .menu.active .bar{
     width: 100%;
     max-width: 80%;
     height: auto;
-    min-height: 100vh;
     margin: 0 auto;
     display: flex;
     justify-content: space-between;
-    padding-top:111px;
+    padding-top:200px;
  
     
 }
