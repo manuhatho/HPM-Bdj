@@ -261,6 +261,7 @@ header .menu.active .bar{
     max-height: 600px;
     object-fit: cover;
     object-position: top;
+    margin-bottom: 0;
 }
 
 .main {

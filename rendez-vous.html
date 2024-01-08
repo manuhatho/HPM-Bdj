@@ -70,10 +70,13 @@
                     </div>
                     <div>
                         <label for="date">
-                            <!-- <i class="fa-regular fa-calendar"></i> -->
+                            <i class="fa-regular fa-calendar"></i>
                         </label>
                       
-                        <input id="date" name="Date" type="date" placeholder="Choisissez une date">
+                        <label for="dateInput">Sélectionnez une date :</label>
+                        <input type="text" id="dateInput" placeholder="JJ/MM/AAAA">
+                      
+                      
                     </div>
                     <div>
                         <label for="message">
@@ -170,7 +173,16 @@
 
 
 
-
+<script>
+    // Appliquer les contraintes de format de date
+    document.getElementById('dateInput').addEventListener('input', function () {
+      let inputValue = this.value;
+      if (inputValue.length === 2 || inputValue.length === 5) {
+        inputValue += '/';
+        this.value = inputValue;
+      }
+    });
+  </script>
 
     <script src="./script.js"></script>
     <script src="https://kit.fontawesome.com/ca9a6c5a17.js" crossorigin="anonymous"></script>
