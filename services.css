@@ -6,6 +6,7 @@
     --red:#fe0003;
     --yellow:#fef917;
     --blue:#0e2293;
+    --white:#fff;
   }
   
   
@@ -320,7 +321,7 @@
       margin-bottom: 30px;
   }
   .section-2 h1{
-      color:var(--yellow);
+      color:var(--white);
       margin-bottom: 50px;
       text-align: center;
       
