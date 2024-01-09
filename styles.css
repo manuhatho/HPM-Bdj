@@ -40,9 +40,9 @@ body{
    
 }
 
-/* .preventOverflow-X {
+.preventOverflow-X {
     overflow-x: hidden;
-} */
+}
 
 
 .header-hero {
@@ -414,6 +414,7 @@ main{
     line-height: 30px;
     width: 100%;
     max-width: 400px;
+    
 }
 
 .boxes .img, .boxes h2{
@@ -456,7 +457,7 @@ main{
     justify-content: center;
     width: 100%;
     max-width: 600px;
-    height: 400px;
+    height: 500px;
     font-family: 'rubik';
     color: #fff;
     background-color: var(--green);
@@ -465,7 +466,9 @@ main{
 
 .section-3 .sect3-left h1, .sect3-left p {
     margin-bottom: 30px;
+    text-align: justify;
 }
+
 .sect3-left button {
     display: block;
     width: 100%;
@@ -488,11 +491,11 @@ main{
 .section-3 .sect3-right{
     width: 100%;
     max-width: 600px;
-    height: 400px;
+    height: 500px;
 }
 .section-3 .sect3-right img{
     width: 100%;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
     object-position: center;
 }
@@ -534,20 +537,28 @@ main{
     justify-content: center;
     width: 100%;
     max-width: 600px;
-    height: 400px;
+    height: 500px;
     color: #fff;
     background-color: var(--green2);
-    padding:  0 60px;
+    /* padding:  0 60px;
     padding-bottom: 50px;
-    padding-top: 30px;
-    
+    padding-top: 30px; */
+    padding: 60px;
+   
 }
 
 .section-4 .sect4-left h1, .sect4-left p {
     margin-bottom: 30px;
-    text-align: start;
+    text-align: justify;
+    width: 100%;
+    
 
 }
+.section-4 .sect4-left h1{
+   text-align: start;
+   
+}
+
 .sect4-left button {
     display: block;
     width: 100%;
@@ -574,8 +585,73 @@ main{
 }
 .section-4 .sect4-right img{
     width: 100%;
-    height: 400px;
+    height: 500px;
     object-fit: cover;
+}
+
+
+
+.section-5{
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    padding: 100px 0;
+
+    font-family: "rubik";
+     
+}
+
+.section-5 h1{
+    color:var(--yellow);
+    margin-bottom: 50px;
+    text-align: center;
+    
+}
+
+.section-5 .box-assurance{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    justify-content: center;
+    
+
+ 
+}
+.section-5 .box-assurance .boxes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-bottom: 50px; 
+   
+}
+
+.section-5 .box-assurance .boxes .box {
+    background-color: #fff;
+    margin: 15px;
+    padding: 30px;
+    
+
+}
+
+.section-5 .box-assurance .boxes .img {
+   width: 400px;
+   height: 300px;
+}
+.section-5 .box-assurance .boxes img {
+    width: 100%;
+    height: 300px;
+    object-fit: contain;
+
+
+}
+.section-5 .box-assurance .boxes::after{
+    content: "";
+    width: 100%;
+    max-width: 980px;
+   height: 300px;
+  
 }
 
 footer{
@@ -728,6 +804,9 @@ footer #copyright{
     .section-2{
         max-width: 100%;
     }
+    .section-5{
+        max-width: 100%;
+    }
 
     .section-2 .box-service .boxes {
         display: flex;
@@ -736,18 +815,35 @@ footer #copyright{
         align-items: center;
         margin-bottom: 100px;
     
-    
-      
     }
+    .section-5 .box-assurance .boxes {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        align-items: center;
+        margin-bottom: 100px;
+    
+    }
+   
 
     .section-2 .box-service .boxes .box {
         margin-top: 40px;
     }
+    .section-5 .box-assurance .boxes .box {
+        margin-top: 40px;
+    }
+    
 }
 
 
 /* xl */
 @media (max-width:1312px) {
+    .section-3{
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        align-items: center;
+    }
     .section-4{
         display: flex;
         flex-direction: column;
@@ -914,16 +1010,11 @@ footer #copyright{
     .section-2 .box-service .boxes .box {
         margin-top: 0;
     }
-}
-@media (max-width:958px) {
-    .section-3{
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: center;
-        align-items: center;
+    .section-5 .box-assurance .boxes .box {
+        margin-top: 0;
     }
-  
 }
+
 @media (max-width:870px) {
     
     footer .box-2 input{
@@ -978,7 +1069,9 @@ footer #copyright{
         
        
     }
+  
 }
+
 @media (max-width:540px) {
     footer .top {
         text-align: center;
@@ -1026,15 +1119,28 @@ footer #copyright{
     .section-2 .box-service .boxes .box{
         margin: 0;
     }
+    /* .section-5 .box-assurance .boxes .box{
+        margin: 0;
+    } */
     .section-2 .box-service .boxes .img {
         width: 100%;
        max-width: 400px;
        height: auto;
     }
+    /* .section-5 .box-assurance .boxes .img {
+        width: 100%;
+       max-width: 400px;
+       height: auto;
+     
+    } */
     .section-2 .box-service .boxes img {
         width: 100%;
        height: auto;
     }
+    /* .section-5 .box-assurance .boxes img {
+        width: 100%;
+       height: auto;
+    } */
     .section-3{
         max-width: 100%;
     }
