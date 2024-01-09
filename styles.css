@@ -626,7 +626,7 @@ main{
     justify-content: center;
     flex-wrap: wrap;
     align-items: center;
-    margin-bottom: 50px; 
+    margin-bottom: 30px; 
    
 }
 
@@ -1109,12 +1109,17 @@ footer #copyright{
     }
     .section-3 .sect3-left{
         height: auto;
-       padding-top: 20px;
-       padding-bottom: 20px;
-       
-
+        padding-top: 20px;
+        padding-bottom: 20px;
+        
+        
     }
     
+}
+@media (max-width:475px){
+    .section-5 .box-assurance .boxes .box{
+        margin: 0;
+    }
 }
 @media (max-width:430px){
   
