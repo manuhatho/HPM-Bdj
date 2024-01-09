@@ -199,23 +199,71 @@
   .hero{
       width: 100%;
       max-width: 80%;
-      min-height:40vh;
+      height: auto;
       margin: 0 auto;
       display: flex;
-      justify-content: center;
-      align-items: center;
-      padding-top:300px;
-      font-family: "rubik";
+      justify-content: space-between;
+      padding-top:200px;
    
-  }
-  .hero h1{
-    text-transform: uppercase;
-    color:var(--yellow);
-    margin-bottom: 100px;
+      
   }
   
   
- 
+  .hero-left{
+   padding-top: 80px;
+      
+  }
+  .hero-left h1, .hero-left p, .hero-left button{
+      margin-bottom: 50px;
+  }
+  .hero-left h1{
+      color: var(--yellow);
+      font-family: 'rubik';
+      width: 100%;
+      max-width: 800px;
+      text-transform: uppercase;
+  }
+  .hero-left p{
+      color: #fff;
+      font-family: 'rubik';
+      width: 100%;
+      max-width: 600px;
+      text-align: justify;
+  }
+  
+  .hero-left  button{
+      font-family:'rubik' ;
+      padding: 12px 20px;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s ease;
+      background-color: #fff;
+      /* font-size: 16px; */
+      
+  }
+  .hero-left button:hover{
+      transition: 0.2s ease;
+      background-color: var(--green2);
+      color: #fff;
+      scale: 1.3;
+      transform: translateX(20px);
+  }
+  .hero-right{
+      width: 100%;
+      max-width: 800px;
+      height: 600px;
+      margin-left: 30px;
+  
+  }
+  .hero-right img{
+      width: 100%;
+      height:100%;
+      max-height: 600px;
+      object-fit: cover;
+      object-position: top;
+      margin-bottom: 0;
+  }
+  
   .main {
       width: 100%;
      
@@ -263,7 +311,7 @@
   
       display: flex;
       flex-direction: column;
-      justify-content: center;
+      justify-content: end;
       font-family: "rubik";
       margin-left: 30px;
       width: 100%;
@@ -271,7 +319,7 @@
       height: 500px;
      
   }
-  .sect1-right h3,.sect1-right h1, .sect1-right #p-one{
+  .sect1-right h3,.sect1-right h1, .sect1-right p{
       margin-bottom: 30px;
   }
   .section-1 h3{
@@ -284,13 +332,25 @@
     
     
   }
-  .section-1 #p-one{
+  .section-1 p{
       width: 100%;
       max-width: 600px;
-      font-weight: bold;
   }
   
-
+  .section-1 button{
+      font-family:'rubik' ;
+      padding: 12px 20px;
+      background-color: var(--red);
+      color: white;
+      border: none;
+      cursor: pointer;
+      transition: 0.2s ease;
+  }
+  .section-1 button:hover{
+      transition: 0.2s ease;
+      background-color: var(--green2);
+     
+  }
   
   .main2{
       width: 100%;
@@ -300,7 +360,8 @@
       width: 100%;
       max-width: 80%;
       margin: 0 auto;
-      padding: 100px 0;
+      padding-top: 100px;
+      padding-bottom: 350px;
       font-family: "rubik";
        
   }
@@ -316,14 +377,14 @@
       
   }
   
-  .section-2 .box-value{
+  .section-2 .box-service{
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
    
   }
-  .section-2 .box-value .boxes {
+  .section-2 .box-service .boxes {
       display: flex;
       justify-content: center;
       align-items: center;
@@ -332,27 +393,24 @@
   
     
   }
-  .section-2 .box-value .boxes .box {
+  .section-2 .box-service .boxes .box {
       background-color: #fff;
       margin: 0 20px;
       padding: 30px;
       
-      
-    }
-    .section-2 .box-value .boxes .box h4{
-        color: var(--blue);
-    }
   
-  .section-2 .box-value .boxes .img {
+  }
+  
+  .section-2 .box-service .boxes .img {
      width: 400px;
      height: 300px;
   }
-  .section-2 .box-value .boxes img {
+  .section-2 .box-service .boxes img {
       width: 100%;
       height: 300px;
       object-fit: cover;
   }
-  .section-2 .box-value .boxes p{
+  .section-2 .box-service .boxes p{
       line-height: 30px;
       width: 100%;
       max-width: 400px;
@@ -361,7 +419,7 @@
   .boxes .img, .boxes h2{
       margin-bottom: 15px ;
   }
-  .section-2 .box-value  button {
+  .section-2 .box-service  button {
       padding: 12px 20px;
       transition: 0.25s ease;
       cursor: pointer;
@@ -671,7 +729,7 @@
           max-width: 100%;
       }
   
-      .section-2 .box-value .boxes {
+      .section-2 .box-service .boxes {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
@@ -682,7 +740,7 @@
         
       }
   
-      .section-2 .box-value .boxes .box {
+      .section-2 .box-service .boxes .box {
           margin-top: 40px;
       }
   }
@@ -853,7 +911,7 @@
   
   /* md */
   @media (max-width:999px) {
-      .section-2 .box-value .boxes .box {
+      .section-2 .box-service .boxes .box {
           margin-top: 0;
       }
   }
@@ -965,15 +1023,15 @@
   @media (max-width:430px){
     
      
-      .section-2 .box-value .boxes .box{
+      .section-2 .box-service .boxes .box{
           margin: 0;
       }
-      .section-2 .box-value .boxes .img {
+      .section-2 .box-service .boxes .img {
           width: 100%;
          max-width: 400px;
          height: auto;
       }
-      .section-2 .box-value .boxes img {
+      .section-2 .box-service .boxes img {
           width: 100%;
          height: auto;
       }
