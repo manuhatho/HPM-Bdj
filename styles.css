@@ -397,6 +397,9 @@ main{
     background-color: #fff;
     margin: 0 20px;
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     
 
 }
