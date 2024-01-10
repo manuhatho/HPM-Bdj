@@ -1124,6 +1124,9 @@ footer #copyright{
     .section-5 .box-assurance .boxes .box{
        max-width: 100%;
        margin: 0;
+       display: flex;
+       justify-content: center;
+       align-items: center;
        
        
 
