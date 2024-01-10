@@ -664,6 +664,22 @@ main{
   
 }
 
+.arrow-up.active{
+    transform: translateX(0);
+    transition: 0.3s ease;
+    opacity: 1;
+
+}
+.arrow-up{
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    transform: translateX(40px);
+    transition: 0.3s ease;
+    opacity: 0;
+}
+
+
 footer{
     width: 100%;
     font-size: 16px;

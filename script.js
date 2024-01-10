@@ -68,28 +68,29 @@ out();
 
     })
     
-    let imageIndex = 0;
 
-    function diapo(){
-  
-        let images = document.getElementsByClassName('image');
-  
-        for(i = 0; i < images.length; i++){
-            images[i].style.display = "none";
-        }
-        imageIndex++;
-    
-        if(imageIndex >= images.length){
-          imageIndex = 0;
-        }
-        images[imageIndex].style.display = "block";
-        
-
-        setTimeout(diapo,7000);
-          
-      
-    }
-    diapo();
     // setTimeout(diapo, 1000);
+
+    function scrollToTop(){
+        const arrow = document.querySelector(".arrow-up");
+        document.addEventListener("click", ()=>{
+            window.scrollTo({
+                top:0,
+                behavior: "smooth"
+            });
+        
+        })
+        document.addEventListener("scroll",()=>{
+            // console.log('scroll');
+           if( window.scrollY>200){
+            arrow.classList.add('active');
+            
+
+           }else{
+            arrow.classList.remove('active');
+           }
+         })   
+    }
+    scrollToTop();
     
     

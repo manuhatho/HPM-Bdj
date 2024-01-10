@@ -222,6 +222,9 @@
             </div>
 
         </div>
+        <div class="arrow-up">
+            <img src="./arrow up.png" height="60" alt="">
+        </div>
        
         <footer>
             <div class="footer">
@@ -292,7 +295,28 @@
 
 
 <script>
+        let imageIndex = 0;
+
+function diapo(){
+
+    let images = document.getElementsByClassName('image');
+
+    for(i = 0; i < images.length; i++){
+        images[i].style.display = "none";
+    }
+    imageIndex++;
+
+    if(imageIndex >= images.length){
+      imageIndex = 0;
+    }
+    images[imageIndex].style.display = "block";
     
+
+    setTimeout(diapo,7000);
+      
+  
+}
+diapo();
 </script>
 
     <script src="./script.js"></script>
