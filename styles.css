@@ -802,6 +802,7 @@ form input[type=radio] {
     height: 20px;
     transition: 0.25s ease;
     /* display: block; */
+    vertical-align: middle;
     
     
 }
@@ -1369,6 +1370,9 @@ footer #copyright{
         padding-top: 700px;
        
     }
+    #column-1 .method{
+        text-align: center;
+       }
     #column-1{
         border-right: 1px solid var(--green2);
         border-bottom: none;
