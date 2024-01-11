@@ -980,6 +980,9 @@ form .cardForm label{
         padding-top: 700px;
        
     }
+    #column-1 .method{
+        text-align: center;
+       }
     #column-1{
         border-right: 1px solid var(--green2);
         border-bottom: none;

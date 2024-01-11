@@ -1211,6 +1211,9 @@ input[type=submit]:hover{
         border-right: 1px solid var(--green2);
         border-bottom: none;
     }
+    #column-1 .method{
+        text-align: center;
+       }
     #column-1,   #column-2{
         border: none ;
        border-top:  1px solid var(--green2);
