@@ -1203,12 +1203,12 @@ footer #copyright{
         align-items: center;
     }
 }
-@media (max-width:1280px) {}
+
 
 
 
 /* lg */
-@media (max-width:1024px) {
+@media (max-width:1280px) {
     header nav{
         display: none;
     }
@@ -1366,6 +1366,7 @@ footer #copyright{
         padding-top: 380px;
         display: flex;
         flex-direction: column;
+        padding-top: 700px;
        
     }
     #column-1{

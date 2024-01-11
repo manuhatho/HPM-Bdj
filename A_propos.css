@@ -1188,6 +1188,9 @@ input[type=submit]:hover{
           
           
       }
+      .nav2 .link5{
+        cursor: pointer;
+    }
       .nav2 a:hover{
           color: white;
           background-color: rgba(0, 0, 0, 0.392);
