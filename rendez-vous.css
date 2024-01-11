@@ -588,7 +588,7 @@ form .cardForm label{
    margin-bottom: 5px;
 }
 
-.payment .input[type=submit]{
+.payment input[type=submit]{
     border-color: var(--green2);
     background-color: var(--green2);
     color: white;
