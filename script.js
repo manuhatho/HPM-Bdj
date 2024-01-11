@@ -101,6 +101,13 @@ function Donation() {
   donateLink.forEach(function (link) {
     link.addEventListener("click", () => {
       payment.classList.toggle("active");
+      head.classList.toggle("hide");
+      html.classList.toggle("active");
+      menu.classList.toggle("active");
+      nav.classList.toggle("active");
+      navBlend.classList.toggle("active");
+      header.classList.toggle("hide");
+      logo.classList.toggle("hide");
     });
   });
   bar2.addEventListener("click", () => {
