@@ -131,18 +131,22 @@ function paymentMethod() {
   const mtn = document.getElementById("mtn");
   const way1 = document.querySelector(".way-1");
   const way2 = document.querySelector(".way-2");
+  const form = document.querySelector("form");
 
   card.addEventListener("click", () => {
     way1.style.display = "block";
     way2.style.display = "none";
+    form.style.paddingTop = "700px";
   });
   orange.addEventListener("click", () => {
     way1.style.display = "none";
     way2.style.display = "block";
+    form.style.paddingTop = "550px";
   });
   mtn.addEventListener("click", () => {
     way1.style.display = "none";
     way2.style.display = "block";
+    form.style.paddingTop = "550px";
   });
 }
 paymentMethod();
