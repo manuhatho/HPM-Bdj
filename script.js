@@ -83,6 +83,7 @@ scrollToTop();
 function resetForm() {
   const form = document.querySelector("form").reset();
   
+  
  
 }
 resetForm();
