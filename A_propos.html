@@ -23,6 +23,7 @@
                    <li id="link3"><a class="link3" href="./services.html">Services</a></li>
                     <li id="link"><a class="link" href="./rendez-vous.html">Prenez Rendez-Vous</a></li>
                     <li id="link4"><a class="link4" href="./contactez-nous.html">Contactez-nous</a></li>
+                    <li id="link5"><a class="link5">Faire un Don</a></li>
                 </ul>
             </nav>
 
@@ -44,6 +45,7 @@
            <a id="" href="./services.html">Services</a>
            <a id="book_Appointment" href="./rendez-vous.html">Prenez rendez-vous</a>
            <a id="" href="./contactez-nous.html">Contactez-nous</a>
+           <a class="link5">Faire un Don</a>
         
     </div>
    <div class="main">
@@ -107,6 +109,157 @@
       <div class="arrow-up">
         <img src="./arrow up.png" height="40" alt="">
     </div>
+
+
+    <div class="payment">
+            
+        <form action="">
+            <div class="bar2">
+                <div class="close"></div>
+            </div>
+            <div class="selection">
+        <fieldset id="column-1">
+            <h3>Méthode de paiement</h3>
+        </fieldset>
+        <fieldset id="column-1" class="bar">
+        
+            <h3>
+                <input type="radio" id="carte" name="paymentMethod" value="Carte" checked>
+                <i class="fa-solid fa-credit-card"></i> Carte de crédit
+            </h3>
+            
+            <input id="orange" type="radio"  name="paymentMethod" value="Orange Money">
+            <img  id="paymentMethod" src="./orangeM.png" height="50" alt="">
+                <label>Orange Money</label>
+            
+                
+            
+           
+                <input id="mtn" type="radio" name="paymentMethod" value="Mobile Money">
+                <img  class="mtn" src="./mtnM.jpeg" height="50" alt="">
+                <label>Mobile Money</label>
+
+        </fieldset>
+
+        
+
+        
+    </div>
+    <div class="way">
+        
+        <div class="way-1">
+        <fieldset id="column-2">
+            
+        
+        <fieldset id="column-n">
+           <div class="icone">
+            <div class="img">
+                <img src="./visa.png" alt="">
+            </div>
+            <div class="img">
+                <img src="./mastercard.png" alt="">
+            </div>
+            <div class="img">
+                <img src="./masetrocard.png" alt="">
+            </div>
+            <div class="img">
+                <img src="./paypal.png" alt="">
+            </div>
+           </div>
+
+        </fieldset>
+
+        <div class="cardForm">
+
+            <label for="name">Nom Complet</label>
+            <input id="name" name="full name" type="text" required placeholder="Entrée votre nom et prénom">
+
+            <label for="cardNumber">Numéro de la carte</label>
+            <div id="cardNumber" class="card">
+                <input id="cardNumber" name="Card Number" type="text" required placeholder="1234 5678 9012 3456">
+                <i id="cardNumber" class="fa-solid fa-credit-card"></i>
+            </div>
+
+            <div class="inline">
+                <div class="class1">
+                    <label  for="expiryDate">Date d'expiration</label>
+                    <input id="expiryDate" name="Expiry Date" type="text" required placeholder="MM/AA">
+                </div>
+                <div class="class2">
+                    <label  for="cvv">CVV</label>
+                    <div class="cvv">
+                    <input id="cvv" name="CVV" type="text" required placeholder="CVV">
+                    <div class="fa">
+                        <i class="fa-solid fa-question"></i>
+                    </div>
+                    
+                </div>
+                </div>
+            </div>
+
+            <label for="email">Email</label>
+            <input id="email" type="text" required placeholder="Entrez votre adresse email" >
+           
+           
+          
+        </div>
+
+    </fieldset>
+    
+</div>
+
+<div class="way-2">
+    
+    <fieldset id="column-2">
+            
+        
+        <fieldset id="column-n">
+           <div class="methode">
+            <h2>Paiement Mobile</h2>
+           </div>
+
+        </fieldset>
+
+        <div class="infos">
+            <label for="phone">Numéro de téléphone de paiement</label>
+            <input id="phone" name="Phone Number" type="tel" required placeholder="entrez le numéro de téléphone de paiement">
+
+            <input id="submit_mobileForm" type="submit" value="Valider">
+        </div>
+        
+       
+    </fieldset>
+
+</div>
+
+    </div>
+
+    <div class="montant">
+        <fieldset id="column-1" class="montant-don">
+            <h3 style="color:var(--green2)">Donnez ce que Vous Pouvez</h3>
+        </fieldset>
+
+        <fieldset id="column-1" class="bar montant-don">
+        
+            <h3>
+               <label id="don" for="montant">Montant de la Donation</label>
+                <input type="text" name="Donation" id="montant" required placeholder="500"> <span>XAF</span>
+
+            </h3>
+
+            <input type="submit" value="Valider">
+                   
+
+        </fieldset>
+
+        
+
+    
+    </div>
+
+    </form>
+    
+</div>
     
         <footer>
             <div class="footer">

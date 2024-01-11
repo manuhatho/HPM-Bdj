@@ -89,6 +89,13 @@ resetForm();
 
 function Donation() {
   const bar2 = document.querySelector(".bar2");
+  const head = document.querySelector(".header");
+  const header = document.querySelector("header");
+  const logo = document.querySelector(".logo");
+  const menu = document.querySelector(".menu");
+  const navBlend = document.querySelector(".navBlend");
+  const nav = document.querySelector(".nav2");
+  const html = document.querySelector("html");
   const payment = document.querySelector(".payment");
   const donateLink = document.querySelectorAll(".link5");
   donateLink.forEach(function (link) {
@@ -98,6 +105,13 @@ function Donation() {
   });
   bar2.addEventListener("click", () => {
     payment.classList.toggle("active");
+    head.classList.toggle("hide");
+    html.classList.toggle("active");
+    menu.classList.toggle("active");
+    nav.classList.toggle("active");
+    navBlend.classList.toggle("active");
+    header.classList.toggle("hide");
+    logo.classList.toggle("hide");
     resetForm();
   });
 }
