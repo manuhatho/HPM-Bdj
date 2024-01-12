@@ -1008,10 +1008,14 @@ input[type=submit]:hover{
   
   @media (max-width:1109px) {
     .payment form{
-        padding-top: 380px;
+        
         display: flex;
         flex-direction: column;
-        padding-top: 700px;
+        justify-content: start;
+        padding: 100px 0;
+        position: relative;
+       
+        
        
     }
     #column-1{
@@ -1151,10 +1155,9 @@ input[type=submit]:hover{
         padding: 0 20px ;
      }
      .payment form{
-        padding-top: 600px;
         width: 100%;
         max-width: 100% !important;
-        height: 70vh;
+     
 
      }
     

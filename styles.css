@@ -772,6 +772,7 @@ main{
     width: 100%;
     max-width: 90%;
     height: 100%;
+   
     background-color: var(--white);
     display: flex;
     justify-content: center;
@@ -779,7 +780,7 @@ main{
     overflow-y: scroll;   
     background-color: rgba(255, 255, 255, 0.86);
     position: relative;
-   
+   scale: 0.9;
     
     
 }
@@ -1364,10 +1365,14 @@ footer #copyright{
 /* md */
 @media (max-width:1109px) {
     .payment form{
-        padding-top: 380px;
+        
         display: flex;
         flex-direction: column;
-        padding-top: 700px;
+        justify-content: start;
+        padding: 100px 0;
+       
+       
+        
        
     }
     #column-1 .method{
@@ -1512,10 +1517,10 @@ footer #copyright{
         padding: 0 20px ;
      }
      .payment form{
-        padding-top: 600px;
+      
         width: 100%;
         max-width: 100% !important;
-        height: 70vh;
+    
 
      }
     
