@@ -97,6 +97,7 @@ function Donation() {
   const navBlend = document.querySelector(".navBlend");
   const nav = document.querySelector(".nav2");
   const html = document.querySelector("html");
+  const body = document.querySelector("body");
   const payment = document.querySelector(".payment");
   const donateLink = document.querySelectorAll(".link5");
   donateLink.forEach(function (link) {
@@ -104,6 +105,7 @@ function Donation() {
       payment.classList.toggle("active");
       head.classList.toggle("hide");
       html.classList.toggle("active");
+      body.style.overflowY = 'hidden';
       menu.classList.toggle("active");
       nav.classList.toggle("active");
       navBlend.classList.toggle("active");

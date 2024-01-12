@@ -612,6 +612,7 @@ header nav ul #link5::after{
     opacity: 1;
     transform: scale(1);
     transition: opacity 0.2s ease;
+    
 }
  .payment{
     font-family: "rubik";
