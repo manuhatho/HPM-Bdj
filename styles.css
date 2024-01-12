@@ -708,7 +708,6 @@ main{
 .payment .bar2 .close{
     width: 50%;
     height:2px;
-    background-color: var(--yellow);
     margin: 6px 0;
     margin-left: 18px;
     transition: 0.4s ease;
