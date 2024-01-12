@@ -1001,6 +1001,7 @@ input[type=submit]:hover{
         display: flex;
         flex-direction: column;
         justify-content: start;
+        padding-bottom: 80px;
        
     }
     #column-1 .method{

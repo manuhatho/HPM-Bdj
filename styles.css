@@ -1383,7 +1383,7 @@ footer #copyright{
         min-height: 10px;
         padding: 25px 0;
         position: sticky;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
         top: 0;
     }
     .payment form{
@@ -1391,6 +1391,7 @@ footer #copyright{
         display: flex;
         flex-direction: column;
         justify-content: start;
+        padding-bottom: 80px;
        
     }
     #column-1 .method{
