@@ -1027,6 +1027,7 @@ input[type=submit]:hover{
         position: sticky;
         margin-bottom: 80px;
         top: 0;
+        z-index: 99;
     }
     .payment form{
         

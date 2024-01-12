@@ -106,6 +106,7 @@ function Donation() {
       head.classList.toggle("hide");
       html.classList.toggle("active");
       body.style.overflowY = 'hidden';
+      html.style.overflowY = 'hidden';
       menu.classList.toggle("active");
       nav.classList.toggle("active");
       navBlend.classList.toggle("active");
