@@ -695,15 +695,27 @@ main{
     cursor: pointer;
 }
 /* ---------------------------------------PAYMENT---------------------------------------------- */
+
+
+.payment .top{
+    width: 100%;
+    background-color: var(--green2);
+    min-height: 10px;
+    padding: 25px 0;
+  position: fixed;
+    top: 0;
+}
+
 .payment .bar2{
-   
     width: 35px;
     height: 35px;
     position: absolute;
     top: 15px;
     right: 10px;
    cursor: pointer;
-}
+  
+} 
+
 
 .payment .bar2 .close{
     width: 50%;
@@ -726,12 +738,12 @@ main{
 }
 .payment .bar2::before{
     transform: rotate(45deg) translate(5px , 6px);
-    background-color: var(--green2);
+    background-color: var(--white);
     transition: 0.4s ease;
 }
 .payment .bar2::after{
     transform: rotate(-45deg) translate(5px , -7px);
-    background-color: var(--green2);
+    background-color: var(--white);
     transition: 0.4s ease;
 }
 
@@ -1364,15 +1376,21 @@ footer #copyright{
 
 /* md */
 @media (max-width:1109px) {
+
+    .payment .top{
+        width: 100%;
+        background-color: var(--green2);
+        min-height: 10px;
+        padding: 25px 0;
+        position: sticky;
+        margin-bottom: 100px;
+        top: 0;
+    }
     .payment form{
         
         display: flex;
         flex-direction: column;
         justify-content: start;
-        padding: 100px 0;
-       
-       
-        
        
     }
     #column-1 .method{

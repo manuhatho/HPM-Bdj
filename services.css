@@ -361,20 +361,29 @@ header nav ul #link5::after{
 }
   
 /* ---------------------------------------PAYMENT---------------------------------------------- */
+.payment .top{
+    width: 100%;
+    background-color: var(--green2);
+    min-height: 10px;
+    padding: 25px 0;
+  position: fixed;
+    top: 0;
+}
+
 .payment .bar2{
-   
     width: 35px;
     height: 35px;
     position: absolute;
     top: 15px;
     right: 10px;
    cursor: pointer;
-}
+  
+} 
+
 
 .payment .bar2 .close{
     width: 50%;
     height:2px;
-    background-color: var(--yellow);
     margin: 6px 0;
     margin-left: 18px;
     transition: 0.4s ease;
@@ -393,12 +402,12 @@ header nav ul #link5::after{
 }
 .payment .bar2::before{
     transform: rotate(45deg) translate(5px , 6px);
-    background-color: var(--green2);
+    background-color: var(--white);
     transition: 0.4s ease;
 }
 .payment .bar2::after{
     transform: rotate(-45deg) translate(5px , -7px);
-    background-color: var(--green2);
+    background-color: var(--white);
     transition: 0.4s ease;
 }
 
@@ -438,6 +447,7 @@ header nav ul #link5::after{
     width: 100%;
     max-width: 90%;
     height: 100%;
+   
     background-color: var(--white);
     display: flex;
     justify-content: center;
@@ -445,7 +455,7 @@ header nav ul #link5::after{
     overflow-y: scroll;   
     background-color: rgba(255, 255, 255, 0.86);
     position: relative;
-   
+   scale: 0.9;
     
     
 }
@@ -456,6 +466,7 @@ header nav ul #link5::after{
 
  form h3{
     margin: 15px 0;
+
 
 }
 
@@ -468,6 +479,7 @@ form input[type=radio] {
     height: 20px;
     transition: 0.25s ease;
     /* display: block; */
+    vertical-align: middle;
     
     
 }
@@ -1007,15 +1019,20 @@ input[type=submit]:hover{
   }
   
   @media (max-width:1109px) {
+    .payment .top{
+        width: 100%;
+        background-color: var(--green2);
+        min-height: 10px;
+        padding: 25px 0;
+        position: sticky;
+        margin-bottom: 80px;
+        top: 0;
+    }
     .payment form{
         
         display: flex;
         flex-direction: column;
         justify-content: start;
-        padding: 100px 0;
-        position: relative;
-       
-        
        
     }
     #column-1{
